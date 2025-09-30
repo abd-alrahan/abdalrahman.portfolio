@@ -1,0 +1,98 @@
+:root {
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --accent: #0b5fff;
+  --text: #222;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue",
+    Arial;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+.site-header {
+  background: linear-gradient(90deg, #fff, #f6f8ff);
+  border-bottom: 1px solid #e6e9ef;
+  padding: 28px 0;
+  text-align: center;
+}
+.site-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+.tagline {
+  margin: 6px 0 0;
+  color: #555;
+}
+.top-links a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: var(--accent);
+}
+#projects h2,
+#about h2 {
+  margin-top: 32px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+.card {
+  background: var(--card);
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(20, 20, 40, 0.06);
+}
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.card h3 {
+  margin: 10px 0 6px;
+  font-size: 18px;
+}
+.card p {
+  margin: 0 0 10px;
+  color: #444;
+  font-size: 14px;
+}
+.card-links a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-right: 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: 1px solid #e6e9ef;
+  font-size: 13px;
+}
+.card-links a:first-child {
+  background: transparent;
+  color: var(--accent);
+}
+.site-footer {
+  padding: 20px 0;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+@media (max-width: 520px) {
+  .site-header h1 {
+    font-size: 20px;
+  }
+  .card img {
+    height: 110px;
+  }
+}
