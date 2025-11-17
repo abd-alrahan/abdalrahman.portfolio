@@ -1,129 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Abd Al-Rahman Hanafi — Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <div class="container">
-        <h1>Abd Al-Rahman Hanafi</h1>
-        <p class="tagline">React.js Developer | Flutter | Front-End</p>
-        <nav class="top-links">
-          <a href="resume.pdf" download="AbdAlRahman_Hanafi_CV.pdf"
-            >Download CV</a
-          >
-          <a href="mailto:abdualrahman.hanafi@gmail.com">Contact</a>
-        </nav>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Abd Al-Rahman Hanafi — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container">
+      <h1>AbdAlRahman Hanafi</h1>
+      <p class="tagline">React.js Developer | Flutter | Front-End</p>
+
+      <nav class="top-links">
+        <a href="resume.pdf" download="AbdAlRahman-Hanafi-CV.pdf">Download CV</a>
+        <a href="mailto:abdualrahman.hanafi@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        React.js Developer with solid experience in building responsive and interactive
+        web applications. Skilled in modern JavaScript, React Hooks, state management,
+        performance optimization, and REST APIs. Experienced in developing full-stack
+        projects, problem solving, and delivering production-ready interfaces.
+        Also familiar with Flutter for mobile cross-platform development.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="grid">
+
+        <!-- Buffet System Admin (Slider) -->
+        <article class="card card-featured">
+          <h3>Schools Buffets Management System — Owner/Admin Web App</h3>
+
+          <div class="mock-browser slider">
+
+            <!-- 6 RADIO BUTTONS -->
+            <input type="radio" name="buffet" id="buffet-1" checked>
+            <input type="radio" name="buffet" id="buffet-2">
+            <input type="radio" name="buffet" id="buffet-3">
+            <input type="radio" name="buffet" id="buffet-4">
+            <input type="radio" name="buffet" id="buffet-5">
+            <input type="radio" name="buffet" id="buffet-6">
+            <input type="radio" name="buffet" id="buffet-7">
+
+            <!-- SLIDES -->
+            <div class="slides">
+              <div class="slide"><img src="images/buffet-1.jpg" alt="buffet-1"></div>
+              <div class="slide"><img src="images/buffet-2.jpg" alt="buffet-2"></div>
+              <div class="slide"><img src="images/buffet-3.jpg" alt="buffet-3"></div>
+              <div class="slide"><img src="images/buffet-4.jpg" alt="buffet-4"></div>
+              <div class="slide"><img src="images/buffet-5.jpg" alt="buffet-5"></div>
+              <div class="slide"><img src="images/buffet-6.jpg" alt="buffet-6"></div>
+              <div class="slide"><img src="images/buffet-7.jpg" alt="buffet-7"></div>
+            </div>
+
+            <!-- CONTROLS: left arrow | dots | right arrow (same line) -->
+            <div class="controls">
+              <div class="left">
+                <!-- each label goes to previous slide -->
+                <label class="l1" for="buffet-7">‹</label>
+                <label class="l2" for="buffet-1">‹</label>
+                <label class="l3" for="buffet-2">‹</label>
+                <label class="l4" for="buffet-3">‹</label>
+                <label class="l5" for="buffet-4">‹</label>
+                <label class="l6" for="buffet-5">‹</label>
+                <label class="l7" for="buffet-6">‹</label>
+              </div>
+
+              <div class="dots">
+                <label for="buffet-1"></label>
+                <label for="buffet-2"></label>
+                <label for="buffet-3"></label>
+                <label for="buffet-4"></label>
+                <label for="buffet-5"></label>
+                <label for="buffet-6"></label>
+                <label for="buffet-7"></label>
+              </div>
+
+              <div class="right">
+                <!-- each label goes to next slide -->
+                <label class="r1" for="buffet-2">›</label>
+                <label class="r2" for="buffet-3">›</label>
+                <label class="r3" for="buffet-4">›</label>
+                <label class="r4" for="buffet-5">›</label>
+                <label class="r5" for="buffet-6">›</label>
+                <label class="r6" for="buffet-7">›</label>
+                <label class="r7" for="buffet-1">›</label>
+              </div>
+            </div>
+          </div>
+
+          <p>
+            Full-stack platform to manage buffets across multiple schools — CRUD, inventory,
+            dashboards, real-time notifications, automated reports.
+          </p>
+          <div class="card-links">
+            <a href="https://gitlab.com/thedarkhawk9177-group/buffet-management" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <!-- The React Quiz -->
+        <article class="card">
+          <h3>The React Quiz</h3>
+
+          <div class="mock-browser">
+            <img src="images/react-quiz.jpg" alt="react-quiz">
+          </div>
+
+          <p class="live">
+            <a href="https://react-quiz.vercel.app/" target="_blank">🔗 Live Demo</a>
+          </p>
+          <p>
+            Quiz web app with multi-level questions, timers, progress bar, saved high scores,
+            animations, and user feedback.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/abd-alrahan/react-quiz" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <!-- Classy Weather -->
+        <article class="card">
+          <h3>Classy Weather</h3>
+
+          <div class="mock-browser">
+            <img src="images/classy-weather.jpg" alt="classy-weather">
+          </div>
+
+          <p class="live">
+            <a href="https://classy-weather-liart.vercel.app/" target="_blank">🔗 Live Demo</a>
+          </p>
+          <p>
+            Weather app with automatic location/flag detection, 7-day forecast, instant search,
+            and day/night temperature visualization.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/abd-alrahan/classy-weather" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <!-- usePopcorn -->
+        <article class="card">
+          <h3>usePopcorn — Movie Web App</h3>
+
+          <div class="mock-browser">
+            <img src="images/usepopcorn.jpg" alt="usepopcorn">
+          </div>
+
+          <p class="live">
+            <a href="https://usepopcorn-orcin-delta.vercel.app/" target="_blank">🔗 Live Demo</a>
+          </p>
+          <p>
+            Movie search & rating app with details view, watched-list CRUD and statistics.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/abd-alrahan/usepopcorn" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <!-- Eat N Split -->
+        <article class="card">
+          <h3>Eat-N-Split</h3>
+
+          <div class="mock-browser">
+            <img src="images/eat-n-split.jpg" alt="eat-n-split">
+          </div>
+
+          <p class="live">
+            <a href="https://eat-n-split-beryl-one.vercel.app/" target="_blank">🔗 Live Demo</a>
+          </p>
+          <p>
+            Bill-splitting app for tracking balances with friends and visual indicators.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/abd-alrahan/eat-n-split" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <!-- Far Away -->
+        <article class="card">
+          <h3>Far Away — Travel List App</h3>
+
+          <div class="mock-browser">
+            <img src="images/far-away.jpg" alt="far-away">
+          </div>
+
+          <p class="live">
+            <a href="https://travel-list-sigma-ruby.vercel.app/" target="_blank">🔗 Live Demo</a>
+          </p>
+          <p>
+            Travel packing web app with item management and progress tracking.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/abd-alrahan/travel-list" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <!-- Home Workout Admin (Slider 3 images) -->
+        <article class="card card-featured">
+          <h3>Home Workout System — Trainer/Admin App</h3>
+
+          <div class="mock-browser slider">
+
+            <!-- 3 RADIO BUTTONS -->
+            <input type="radio" name="fitness" id="fitness-1" checked>
+            <input type="radio" name="fitness" id="fitness-2">
+            <input type="radio" name="fitness" id="fitness-3">
+
+            <!-- SLIDES -->
+            <div class="slides">
+              <div class="slide"><img src="images/fitness-1.jpg" alt="fitness-1"></div>
+              <div class="slide"><img src="images/fitness-2.jpg" alt="fitness-2"></div>
+              <div class="slide"><img src="images/fitness-3.jpg" alt="fitness-3"></div>
+            </div>
+
+            <!-- CONTROLS -->
+            <div class="controls">
+              <div class="left">
+                <label class="fl1" for="fitness-3">‹</label>
+                <label class="fl2" for="fitness-1">‹</label>
+                <label class="fl3" for="fitness-2">‹</label>
+              </div>
+
+              <div class="dots">
+                <label for="fitness-1"></label>
+                <label for="fitness-2"></label>
+                <label for="fitness-3"></label>
+              </div>
+
+              <div class="right">
+                <label class="fr1" for="fitness-2">›</label>
+                <label class="fr2" for="fitness-3">›</label>
+                <label class="fr3" for="fitness-1">›</label>
+              </div>
+            </div>
+
+          </div>
+
+          <p>
+            Admin system to manage exercises, diets, fitness tips and users.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/abd-alrahan/adminfitness" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <!-- Home Workout Trainee -->
+        <article class="card">
+          <h3>Home Workout System — Trainee App</h3>
+
+          <p>
+            Mobile app for trainees to follow exercise plans, diets and track progress.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/abd-alrahan/myfitness" target="_blank">Code</a>
+          </div>
+        </article>
+
       </div>
-    </header>
+    </section>
 
-    <main class="container">
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          React.js Developer with foundational experience in building responsive
-          and interactive web applications. Skilled in UI development, state
-          management, and integrating RESTful APIs. Experienced in delivering
-          projects from concept to deployment, with exposure to Flutter and
-          cross-platform development.
-        </p>
-      </section>
-
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="grid">
-          <!-- Project 1 -->
-          <article class="card">
-            <h3>Schools Buffets Management System – Owner/Admin Web App</h3>
-            <p>
-              Full-stack web platform to manage buffets across multiple schools.
-              CRUD operations, dashboards, real-time notifications, automated
-              reports.
-            </p>
-            <div class="card-links">
-              <a
-                href="https://gitlab.com/thedarkhawk9177-group/buffet-management"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-          </article>
-
-          <!-- Project 2 -->
-          <article class="card">
-            <h3>Schools Buffets Management System – Worker Mobile App</h3>
-            <p>
-              Mobile app for buffet workers to manage inventory, sandwiches, and
-              sales with cost/price calculations and stock tracking.
-            </p>
-            <div class="card-links">
-              <a
-                href="https://gitlab.com/thedarkhawk9177-group/buffetmanagementsystem"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-          </article>
-
-          <!-- Project 3 -->
-          <article class="card">
-            <h3>Schools Buffets Management System – Customer Mobile App</h3>
-            <p>
-              Customer-facing app to browse buffet items, place orders, track
-              orders, and submit complaints with real-time notifications.
-            </p>
-            <div class="card-links">
-              <a
-                href="https://gitlab.com/thedarkhawk9177-group/buffetmanagementsystem"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-          </article>
-
-          <!-- Project 4 -->
-          <article class="card">
-            <h3>Home Workout System – Trainer/Admin App</h3>
-            <p>
-              Admin app to manage exercises, diets, fitness tips, and user
-              management for home workout system.
-            </p>
-            <div class="card-links">
-              <a
-                href="https://github.com/abd-alrahan/adminfitness"
-                target="_blank"
-                >Code</a
-              >
-            </div>
-          </article>
-
-          <!-- Project 5 -->
-          <article class="card">
-            <h3>Home Workout System – Trainee Mobile App</h3>
-            <p>
-              Mobile app for trainees to follow exercises, diets, track
-              progress, and receive trainer-provided tips for home workouts.
-            </p>
-            <div class="card-links">
-              <a href="https://github.com/abd-alrahan/myfitness" target="_blank"
-                >Code</a
-              >
-            </div>
-          </article>
-        </div>
-      </section>
-    </main>
-
+    <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container">
-        <p>
-          © Abd Al-Rahman Hanafi —
-          <a href="https://github.com/abd-alrahan" target="_blank">GitHub</a>
-        </p>
+        <p>© AbdAlRahman Hanafi — <a href="https://github.com/abd-alrahan" target="_blank">GitHub</a></p>
       </div>
     </footer>
-  </body>
+
+  </main>
+</body>
+
 </html>
