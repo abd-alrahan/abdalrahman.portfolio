@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Abd Al-Rahman Hanafi — Portfolio</title>
+  <title>AbdAlRahman Hanafi - Portfolio</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
@@ -13,7 +13,7 @@
   <header class="site-header">
     <div class="container">
       <h1>AbdAlRahman Hanafi</h1>
-      <p class="tagline">React.js Developer | Flutter | Front-End</p>
+      <p class="tagline">Software Engineer | Front-End Developer | React.js | Flutter</p>
 
       <nav class="top-links">
         <a href="resume.pdf" download="AbdAlRahman-Hanafi-CV.pdf">Download CV</a>
@@ -27,23 +27,27 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        React.js Developer with solid experience in building responsive and interactive
-        web applications. Skilled in modern JavaScript, React Hooks, state management,
-        performance optimization, and REST APIs. Experienced in developing full-stack
-        projects, problem solving, and delivering production-ready interfaces.
-        Also familiar with Flutter for mobile cross-platform development.
+        Front-End Developer specializing in React.js with solid experience building responsive,
+        high-performance web applications. Skilled in modern JavaScript, component-based
+        architecture, and state management, with strong practice integrating and optimizing
+        RESTful APIs. Experienced in software engineering and delivering features from design to deployment, and
+        building
+        cross-platform mobile apps with Flutter. Knowledgeable in system analysis, networking
+        fundamentals, Linux systems, and web security basics, with ongoing preparation for
+        CompTIA Network+.
       </p>
     </section>
+
+
 
     <!-- PROJECTS -->
     <section id="projects">
       <h2>Projects</h2>
 
       <div class="grid">
-
         <!-- Buffet System Admin (Slider) -->
         <article class="card card-featured">
-          <h3>Schools Buffets Management System — Owner/Admin Web App</h3>
+          <h3>Schools Buffets Management System - Owner/Admin Web App</h3>
 
           <div class="mock-browser slider">
 
@@ -104,11 +108,64 @@
           </div>
 
           <p>
-            Full-stack platform to manage buffets across multiple schools — CRUD, inventory,
-            dashboards, real-time notifications, automated reports.
+            Full-stack platform to manage buffets across multiple schools with CRUD for buffets,
+            workers, suppliers, categories, and inventory. Built dashboards for profits, losses,
+            transactions, complaints, and sales, plus real-time notifications and automated reports.
+            Contributed to system modeling and workflow design.
           </p>
           <div class="card-links">
             <a href="https://gitlab.com/thedarkhawk9177-group/buffet-management" target="_blank">Code</a>
+          </div>
+        </article>
+
+        <!-- Dashboard Complaints System -->
+        <article class="card card-featured">
+          <h3>Dashboard Complaints System - Admin & Employee Web App</h3>
+
+          <div class="mock-browser slider">
+
+            <!-- 3 RADIO BUTTONS -->
+            <input type="radio" name="complaints" id="complaints-1" checked>
+            <input type="radio" name="complaints" id="complaints-2">
+            <input type="radio" name="complaints" id="complaints-3">
+
+            <!-- SLIDES -->
+            <div class="slides">
+              <div class="slide"><img src="./images/complaints-1.jpg" alt="complaints-1"></div>
+              <div class="slide"><img src="./images/complaints-2.jpg" alt="complaints-2"></div>
+              <div class="slide"><img src="./images/complaints-3.jpg" alt="complaints-3"></div>
+            </div>
+
+            <!-- CONTROLS -->
+            <div class="controls">
+              <div class="left">
+                <label class="cl1" for="complaints-3">‹</label>
+                <label class="cl2" for="complaints-1">‹</label>
+                <label class="cl3" for="complaints-2">‹</label>
+              </div>
+
+              <div class="dots">
+                <label for="complaints-1"></label>
+                <label for="complaints-2"></label>
+                <label for="complaints-3"></label>
+              </div>
+
+              <div class="right">
+                <label class="cr1" for="complaints-2">›</label>
+                <label class="cr2" for="complaints-3">›</label>
+                <label class="cr3" for="complaints-1">›</label>
+              </div>
+            </div>
+
+          </div>
+
+          <p>
+            Complaints management system with role-based access for Admin and Employees,
+            complaint lifecycle tracking, activity logs, and citizen feedback interface.
+            Designed with a modular, scalable structure.
+          </p>
+          <div class="card-links">
+            <a href="https://github.com/abd-alrahan/dashboard-complaints-system" target="_blank">Code</a>
           </div>
         </article>
 
@@ -124,8 +181,8 @@
             <a href="https://react-quiz.vercel.app/" target="_blank">🔗 Live Demo</a>
           </p>
           <p>
-            Quiz web app with multi-level questions, timers, progress bar, saved high scores,
-            animations, and user feedback.
+            Quiz web app with multiple difficulty levels, timers, score tracking, progress
+            indicators, result summaries, and UX feedback animations.
           </p>
           <div class="card-links">
             <a href="https://github.com/abd-alrahan/react-quiz" target="_blank">Code</a>
@@ -144,8 +201,8 @@
             <a href="https://classy-weather-liart.vercel.app/" target="_blank">🔗 Live Demo</a>
           </p>
           <p>
-            Weather app with automatic location/flag detection, 7-day forecast, instant search,
-            and day/night temperature visualization.
+            Weather app with location and flag detection, 7-day forecast display,
+            partial city matching, and instant search feedback.
           </p>
           <div class="card-links">
             <a href="https://github.com/abd-alrahan/classy-weather" target="_blank">Code</a>
@@ -154,7 +211,7 @@
 
         <!-- usePopcorn -->
         <article class="card">
-          <h3>usePopcorn — Movie Web App</h3>
+          <h3>usePopcorn - Movie Web App</h3>
 
           <div class="mock-browser">
             <img src="./images/usepopcorn.jpg" alt="usepopcorn">
@@ -164,7 +221,8 @@
             <a href="https://usepopcorn-orcin-delta.vercel.app/" target="_blank">🔗 Live Demo</a>
           </p>
           <p>
-            Movie search & rating app with details view, watched-list CRUD and statistics.
+            Movie search and rating app with details view, watched list CRUD,
+            and average statistics tracking.
           </p>
           <div class="card-links">
             <a href="https://github.com/abd-alrahan/usepopcorn" target="_blank">Code</a>
@@ -183,35 +241,17 @@
             <a href="https://eat-n-split-beryl-one.vercel.app/" target="_blank">🔗 Live Demo</a>
           </p>
           <p>
-            Bill-splitting app for tracking balances with friends and visual indicators.
+            Bill-splitting app to track balances and owed amounts with clear
+            visual cues and friend management.
           </p>
           <div class="card-links">
             <a href="https://github.com/abd-alrahan/eat-n-split" target="_blank">Code</a>
           </div>
         </article>
 
-        <!-- Far Away -->
-        <article class="card">
-          <h3>Far Away — Travel List App</h3>
-
-          <div class="mock-browser">
-            <img src="./images/far-away.jpg" alt="far-away">
-          </div>
-
-          <p class="live">
-            <a href="https://travel-list-sigma-ruby.vercel.app/" target="_blank">🔗 Live Demo</a>
-          </p>
-          <p>
-            Travel packing web app with item management and progress tracking.
-          </p>
-          <div class="card-links">
-            <a href="https://github.com/abd-alrahan/travel-list" target="_blank">Code</a>
-          </div>
-        </article>
-
         <!-- Home Workout Admin (Slider 3 images) -->
         <article class="card card-featured">
-          <h3>Home Workout System — Trainer/Admin App</h3>
+          <h3>Home Workout System - Trainer/Admin Application</h3>
 
           <div class="mock-browser slider">
 
@@ -251,7 +291,8 @@
           </div>
 
           <p>
-            Admin system to manage exercises, diets, fitness tips and users.
+            Admin dashboard to manage exercises, diets, and fitness tips, with user management
+            tools and cleanup of redundant accounts.
           </p>
           <div class="card-links">
             <a href="https://github.com/abd-alrahan/adminfitness" target="_blank">Code</a>
@@ -260,10 +301,11 @@
 
         <!-- Home Workout Trainee -->
         <article class="card">
-          <h3>Home Workout System — Trainee App</h3>
+          <h3>Home Workout System - Trainee Mobile Application</h3>
 
           <p>
-            Mobile app for trainees to follow exercise plans, diets and track progress.
+            Flutter mobile app for trainees to follow exercise and diet plans, receive trainer
+            tips, and track progress.
           </p>
           <div class="card-links">
             <a href="https://github.com/abd-alrahan/myfitness" target="_blank">Code</a>
@@ -273,10 +315,12 @@
       </div>
     </section>
 
+
+
     <!-- FOOTER -->
     <footer class="site-footer">
       <div class="container">
-        <p>© AbdAlRahman Hanafi — <a href="https://github.com/abd-alrahan" target="_blank">GitHub</a></p>
+        <p>© AbdAlRahman Hanafi - <a href="https://github.com/abd-alrahan" target="_blank">GitHub</a></p>
       </div>
     </footer>
 
